@@ -2,7 +2,35 @@
 
 Material de apoio para entender, com testes autorizados, como a empresa imprime etiquetas em impressoras Zebra.
 
-> ⚠️ **Este repositório é público.** Não coloque aqui relatórios, prints, modelos de etiqueta nem qualquer dado da empresa. Guarde as evidências em um local privado.
+> ⚠️ **Este repositório é público.** Não coloque aqui relatórios, capturas, prints, modelos de etiqueta nem qualquer dado da empresa. O [`.gitignore`](.gitignore) desta pasta bloqueia capturas e relatórios, mas guarde as evidências em um local privado.
+
+## Onde estamos
+
+| Etapa | Status |
+|---|---|
+| 1. Identificação | **Em andamento**: falta rodar o levantamento no computador da empresa |
+| 2. Mapeamento | Não iniciada. Roteiro de observação em [X2](docs/experimentos.md#x2-observar-uma-impressão-real) |
+| 3. Investigação técnica | Não iniciada. Ferramentas prontas |
+| 4. Experimentos | Não iniciada. [Catálogo preliminar](docs/experimentos.md) pronto |
+| 5. Solução própria | Só depois de entender o sistema atual |
+| 6. Documentação | Em andamento, [veja abaixo](#documentação-do-estudo) |
+
+## Conteúdo
+
+```
+zebra-estudo/
+├── etapa1/coletar-etapa1.ps1        levantamento somente leitura (Etapa 1)
+├── ferramentas/
+│   ├── analisar-captura.ps1         resume uma captura sem expor os dados
+│   ├── impressora-virtual.ps1       finge ser impressora e salva o que recebe
+│   └── enviar-arquivo.ps1           envia um arquivo pela porta 9100 (só local, por padrão)
+├── laboratorio/                     exemplos de ZPL e exercícios, com dados fictícios
+├── docs/
+│   ├── glossario.md                 conceitos técnicos com exemplos
+│   ├── hipoteses.md                 o que pode ser verdade e como confirmar
+│   └── experimentos.md              experimentos com objetivo, procedimento e riscos
+└── testes/testar-ferramentas.ps1    testa as ferramentas com dados fictícios
+```
 
 ## Etapa 1: identificação
 
@@ -49,3 +77,33 @@ Requer PowerShell 3.0 ou mais recente (já vem no Windows 8, 10 e 11).
 ### Privacidade
 
 Por padrão, o relatório mascara IPs, nomes de servidores, nome do computador, usuário, domínio e números de série dos dispositivos. Mesmo assim, **revise antes de enviar**: nomes de impressoras e de programas internos podem identificar a empresa.
+
+## Ferramentas para as próximas etapas
+
+Prontas, mas para usar só quando chegarmos lá (ou no [laboratório](laboratorio/README.md), com dados fictícios):
+
+| Ferramenta | Para quê |
+|---|---|
+| [`analisar-captura.ps1`](ferramentas/analisar-captura.ps1) | Lê um trabalho capturado (ZPL, EPL ou CPCL) e mostra tamanho da etiqueta, campos, configurações, uso da memória da impressora e indícios. Os dados das etiquetas saem mascarados. |
+| [`impressora-virtual.ps1`](ferramentas/impressora-virtual.ps1) | Escuta na porta 9100 deste computador e salva cada trabalho recebido, sem imprimir. |
+| [`enviar-arquivo.ps1`](ferramentas/enviar-arquivo.ps1) | Envia um arquivo pela porta 9100. Por padrão, só para este computador; impressora de verdade exige `-PermitirRede` e confirmação. |
+
+## Documentação do estudo
+
+| Documento | Status |
+|---|---|
+| [Glossário](docs/glossario.md) | iniciado |
+| [Hipóteses](docs/hipoteses.md) | 8 hipóteses abertas |
+| [Experimentos](docs/experimentos.md) | catálogo preliminar |
+| Evidências coletadas | **fora deste repositório**, em local privado |
+| Diagrama do processo atual | depende da Etapa 2 |
+| Inventário de funcionalidades | depende da Etapa 2 |
+| Arquitetura identificada | depende da Etapa 3 |
+| Proposta de arquitetura e plano de testes | Etapa 5 |
+
+## Regras de trabalho
+
+- Nada muda na produção sem autorização; prefira o que é reversível.
+- Relatórios e capturas ficam no computador da empresa. No chat ou no GitHub, só resumos mascarados.
+- Serviços online, como o Labelary, só com dados fictícios.
+- Nada de contornar licenças, senhas ou bloqueios de segurança.
