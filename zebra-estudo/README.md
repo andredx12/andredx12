@@ -9,7 +9,7 @@ Material de apoio para entender, com testes autorizados, como a empresa imprime 
 | Etapa | Status |
 |---|---|
 | 1. Identificação | **Quase concluída**: faltam versão do Windows, driver e porta |
-| 2. Mapeamento | **Próxima**: observar uma impressão real ([X2](docs/experimentos.md#x2-observar-uma-impressão-real)) |
+| 2. Mapeamento | **Em andamento**: campos das etiquetas e primeira versão do processo levantados; falta o passo a passo no programa ([X2](docs/experimentos.md#x2-observar-uma-impressão-real)) |
 | 3. Investigação técnica | Não iniciada. Ferramentas prontas |
 | 4. Experimentos | Não iniciada. [Catálogo preliminar](docs/experimentos.md) pronto |
 | 5. Solução própria | Só depois de entender o sistema atual |
@@ -96,8 +96,8 @@ Prontas, mas para usar só quando chegarmos lá (ou no [laboratório](laboratori
 | [Hipóteses](docs/hipoteses.md) | 10 hipóteses; o status fica no registro privado |
 | [Experimentos](docs/experimentos.md) | catálogo preliminar |
 | Evidências coletadas | **fora deste repositório**, em local privado |
-| Diagrama do processo atual | depende da Etapa 2 |
-| Inventário de funcionalidades | depende da Etapa 2 |
+| Diagrama do processo atual | versão 1 no registro privado |
+| Inventário de funcionalidades | inventário de campos no registro privado |
 | Arquitetura identificada | depende da Etapa 3 |
 | Proposta de arquitetura e plano de testes | Etapa 5 |
 
