@@ -28,17 +28,20 @@ Ordem: do que não tem risco nenhum (só observar) até o que precisa de autoriz
 ## X2. Observar uma impressão real
 
 1. **Objetivo:** mapear as telas, os campos e os passos de quem imprime.
-2. **Hipótese:** H8 (quais campos vêm de outro lugar), H2 e H3 (de onde sai a impressão).
+2. **Hipótese:** H2 e H3 (de onde sai a impressão), H8 (de onde vêm os dados), H9 (onde são digitados) e H10 (se o modelo muda a cada impressão).
 3. **Procedimento:**
-   1. Combine com o operador e com o gestor.
+   1. Combine com quem imprime e com o gestor.
    2. Acompanhe uma impressão normal, sem interferir.
-   3. Anote cada tela e cada campo: digitado, escolhido em uma lista ou preenchido sozinho.
-   4. Anote como se define a quantidade e como se confirma a impressão.
-   5. Pergunte como funcionam reimpressão, cancelamento e erros (ex.: falta de etiqueta).
-   6. Tire prints com os dados ocultos.
+   3. Anote como o modelo é aberto (qual arquivo, de qual pasta) e quantos modelos existem.
+   4. Anote cada campo, só o nome e nunca o valor: digitado, escolhido em uma lista ou preenchido sozinho. Veja se é digitado numa janela que aparece ao imprimir ou direto no texto da etiqueta.
+   5. Pergunte de onde vêm as informações digitadas: papel, tela de outro sistema, memória.
+   6. Se houver número de série, pergunte como se sabe o próximo e o que impede repetir.
+   7. Anote como se define a quantidade e se o arquivo do modelo é salvo depois de imprimir.
+   8. Pergunte como funcionam reimpressão, cancelamento e erros (ex.: acabou a etiqueta ou o ribbon).
+   9. Tire prints com os dados ocultos.
 4. **Resultado esperado:** a sequência de telas e a lista de campos, o começo do diagrama do processo atual.
-5. **Interpretação:** campos que aparecem sozinhos depois de um código indicam consulta a outra fonte (H8). Se a impressão sai de uma tela do ERP, H2 ganha força.
-6. **Riscos e precauções:** nenhum, desde que você só observe. Não fotografe dados confidenciais.
+5. **Interpretação:** campos preenchidos sozinhos indicam consulta a outra fonte (H8); se a impressão sai de uma tela do ERP, H2 ganha força. Uma janela pedindo os dados ao imprimir confirma H9: o modelo tem campos definidos. Editar o texto direto na etiqueta descarta H9: o modelo é reaproveitado como um desenho. Salvar depois de imprimir confirma H10: o arquivo muda a cada etiqueta, o que afeta reimpressões e histórico.
+6. **Riscos e precauções:** nenhum, desde que você só observe. Se abrir o modelo para olhar, feche sem salvar. Não fotografe dados confidenciais.
 
 ## X3. Ver conexões e arquivos do programa
 

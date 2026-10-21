@@ -38,6 +38,8 @@ Elas não se excluem: H1 e H7 podem ser verdadeiras ao mesmo tempo, por exemplo.
 | H6 | O **modelo fica guardado na impressora** (`^DF`/`^XF`) e o computador envia só os dados. | A captura tem `^XF` e `^FN`. | As capturas trazem a etiqueta completa a cada impressão. | Captura (Etapa 4) |
 | H7 | A etiqueta chega à impressora **como imagem** (`^GF`), gerada pelo driver. | Captura dominada por `^GF`, sem `^FD`. | Captura com textos e códigos de barras em `^FD`. | Captura (Etapa 4) |
 | H8 | Os dados **vêm de outro sistema** (banco de dados, ERP, arquivo), não só da digitação. | Campos preenchidos sozinhos; o programa conecta a um servidor de banco ou lê arquivos de dados. | Todos os campos são digitados; nenhuma conexão nem arquivo de dados. | Pergunta E3; Monitor de Recursos (Etapa 3) |
+| H9 | Os dados são digitados **numa janela que aparece na hora de imprimir** (variáveis do modelo), e não editando o texto direto na etiqueta. | Ao imprimir, aparece uma janela pedindo os dados. | A pessoa clica no texto da etiqueta e o altera. | Observação (Etapa 2) |
+| H10 | O **arquivo do modelo é alterado e salvo** a cada impressão. | A pessoa salva o arquivo depois de imprimir; a data de modificação do arquivo muda a cada uso. | O modelo é aberto, preenchido e fechado sem salvar. | Observação (Etapa 2); data de modificação do arquivo (Etapa 3) |
 
 ## Como saber se o conteúdo é gerado no PC ou vem de outro sistema
 
@@ -50,15 +52,6 @@ Nenhum desses passos prova sozinho a origem dos dados. A conclusão vem do conju
 
 ## Status
 
-| ID | Status | Evidência | Atualizado em |
-|---|---|---|---|
-| H1 | aberta | — | — |
-| H2 | aberta | — | — |
-| H3 | aberta | — | — |
-| H4 | aberta | — | — |
-| H5 | aberta | — | — |
-| H6 | aberta | — | — |
-| H7 | aberta | — | — |
-| H8 | aberta | — | — |
+O status de cada hipótese e as evidências ficam no **registro de evidências privado**, fora deste repositório, porque citam informações da empresa.
 
 Legenda: **aberta** (sem evidência), **indício** (uma evidência a favor), **confirmada** (evidências suficientes), **descartada** (evidência contra).

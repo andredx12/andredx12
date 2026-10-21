@@ -8,8 +8,8 @@ Material de apoio para entender, com testes autorizados, como a empresa imprime 
 
 | Etapa | Status |
 |---|---|
-| 1. Identificação | **Em andamento**: falta rodar o levantamento no computador da empresa |
-| 2. Mapeamento | Não iniciada. Roteiro de observação em [X2](docs/experimentos.md#x2-observar-uma-impressão-real) |
+| 1. Identificação | **Quase concluída**: faltam versão do Windows, driver e porta |
+| 2. Mapeamento | **Próxima**: observar uma impressão real ([X2](docs/experimentos.md#x2-observar-uma-impressão-real)) |
 | 3. Investigação técnica | Não iniciada. Ferramentas prontas |
 | 4. Experimentos | Não iniciada. [Catálogo preliminar](docs/experimentos.md) pronto |
 | 5. Solução própria | Só depois de entender o sistema atual |
@@ -93,7 +93,7 @@ Prontas, mas para usar só quando chegarmos lá (ou no [laboratório](laboratori
 | Documento | Status |
 |---|---|
 | [Glossário](docs/glossario.md) | iniciado |
-| [Hipóteses](docs/hipoteses.md) | 8 hipóteses abertas |
+| [Hipóteses](docs/hipoteses.md) | 10 hipóteses; o status fica no registro privado |
 | [Experimentos](docs/experimentos.md) | catálogo preliminar |
 | Evidências coletadas | **fora deste repositório**, em local privado |
 | Diagrama do processo atual | depende da Etapa 2 |
