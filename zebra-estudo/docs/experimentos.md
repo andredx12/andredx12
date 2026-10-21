@@ -9,6 +9,7 @@ Ordem: do que não tem risco nenhum (só observar) até o que precisa de autoriz
 | [X1. Levantamento somente leitura](#x1-levantamento-somente-leitura) | 1 | Para rodar scripts no PC | pronto para rodar |
 | [X2. Observar uma impressão real](#x2-observar-uma-impressão-real) | 2 | Do operador e do gestor | a fazer |
 | [X3. Ver conexões e arquivos do programa](#x3-ver-conexões-e-arquivos-do-programa) | 3 | Não muda nada, mas combine antes | a fazer |
+| [X8. Localizar os modelos e ver a data de modificação](#x8-localizar-os-modelos-e-ver-a-data-de-modificação) | 2 e 3 | Não muda nada | a fazer |
 | [X4. Imprimir para arquivo](#x4-imprimir-para-arquivo) | 3 e 4 | Sim | a fazer |
 | [X5. Capturar com a impressora virtual](#x5-capturar-com-a-impressora-virtual) | 4 | Sim, e ajuda da TI | a fazer |
 | [X6. Comparar duas capturas](#x6-comparar-duas-capturas) | 4 | Sim (mesmas do X4/X5) | a fazer |
@@ -56,6 +57,18 @@ Ordem: do que não tem risco nenhum (só observar) até o que precisa de autoriz
 4. **Resultado esperado:** uma lista de portas remotas e de tipos de arquivo usados.
 5. **Interpretação:** portas 1433, 5432, 3306, 1521 ou 3050 indicam banco de dados; 80 ou 443, uma API ou sistema web; arquivos `.xlsx`, `.csv` ou `.mdb`, dados em arquivo. Nenhuma conexão nem arquivo de dados sugere digitação ou dados locais.
 6. **Riscos e precauções:** só leitura. Nomes de servidores e caminhos são confidenciais: oculte antes de compartilhar.
+
+## X8. Localizar os modelos e ver a data de modificação
+
+1. **Objetivo:** saber onde ficam os arquivos de modelo e se eles são alterados a cada impressão.
+2. **Hipótese:** H10.
+3. **Procedimento:**
+   1. No Explorador de Arquivos, pesquise pela extensão dos modelos (ex.: `.lbl` no ZebraDesigner 2, `.btw` no BarTender). Outra opção: no programa, use Arquivo > Abrir só para ver a pasta e cancele.
+   2. Clique com o botão direito no arquivo > Propriedades. Anote a pasta (oculte nomes de pessoas e servidores) e as datas de criação e de modificação.
+   3. Repita depois de um dia de impressões e compare.
+4. **Resultado esperado:** a pasta dos modelos e as datas de cada arquivo.
+5. **Interpretação:** abrir um arquivo não muda a data de modificação; só salvar muda. Se a data acompanha os dias de impressão, o modelo é salvo a cada uso (H10); se for antiga, não é. Uma pasta de rede (`\\servidor\...`) significa que os modelos dependem de outro computador.
+6. **Riscos e precauções:** nenhum, é só leitura. Não renomeie nem mova os arquivos.
 
 ## X4. Imprimir para arquivo
 
