@@ -68,6 +68,18 @@ Termos que aparecem no estudo, com exemplos. Quando surgir um termo novo, ele en
 - **QZ Tray**: aplicativo de outra empresa com a mesma ideia: deixa sistemas web enviarem comandos RAW para impressoras locais.
 - **Link-OS e SDKs da Zebra**: Link-OS é a plataforma das impressoras Zebra mais recentes. A Zebra também oferece SDKs (bibliotecas) para programas conversarem com as impressoras.
 
+## Proteção balística (termos que aparecem nas etiquetas)
+
+Resumo para entender a etiqueta. Detalhes legais devem ser confirmados com a área de certificação da empresa.
+
+- **NIJ 0101.04**: norma do National Institute of Justice (EUA) sobre a resistência balística de coletes. Define os níveis de proteção e, para cada nível, as munições usadas no teste.
+- **Nível de proteção**: classificação da norma (I, IIA, II, IIIA, III e IV). Na NIJ 0101.04, o nível II é testado com 9 mm FMJ RN e .357 Magnum JSP; por isso as "ameaças" de uma etiqueta dependem do nível.
+- **FMJ RN e JSP**: tipos de projétil. FMJ RN é *full metal jacket, round nose* (encamisado, ponta redonda); JSP é *jacketed soft point* (encamisado, ponta macia).
+- **Stand alone**: painel que oferece sozinho a proteção indicada, sem depender de outro componente. O contrário é *in conjunction with* (ICW).
+- **C.A. (Certificado de Aprovação)**: certificado do Ministério do Trabalho exigido para vender equipamentos de proteção individual (EPI) no Brasil.
+- **ReTEx (Relatório Técnico Experimental)**: avaliação do Exército para produtos controlados, como blindagens.
+- **TR (Título de Registro)**: registro no Exército que autoriza a empresa a trabalhar com produtos controlados. Tem prazo de validade.
+
 ## Investigação
 
 - **Engenharia reversa caixa-preta**: entender um sistema observando o que entra e o que sai, sem acesso ao código. É o que fazemos aqui, sempre dentro da licença e com autorização.
