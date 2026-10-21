@@ -76,13 +76,13 @@ Ordem: do que não tem risco nenhum (só observar) até o que precisa de autoriz
 2. **Hipótese:** H6 e H7, e qual linguagem é usada (ZPL ou EPL).
 3. **Procedimento:**
    1. Confirme com o responsável que pode fazer uma impressão de teste.
-   2. Use dados de teste (produto ou lote fictício, se o sistema permitir) ou uma cópia do modelo.
-   3. No diálogo de impressão, procure "Imprimir em arquivo" ou "Print to file". Nem todo programa tem essa opção.
+   2. Em vez de dados reais, preencha os campos com valores fictícios e fáceis de reconhecer (ex.: `9999`, `TESTE`). Assim a captura não tem dados confidenciais e mostra onde cada campo entra no ZPL.
+   3. No diálogo de impressão, procure "Imprimir em arquivo" ou "Print to file". Nem todo programa tem essa opção. Se não houver, não troque a porta da impressora de produção: use o X5.
    4. Salve o `.prn` no computador da empresa.
    5. Rode `ferramentas/analisar-captura.ps1 -Arquivo <arquivo>.prn`.
    6. Compartilhe só o resumo.
 4. **Resultado esperado:** um arquivo `.prn` e um resumo com linguagem, campos e indícios.
-5. **Interpretação:** veja a seção "Indícios" do resumo e compare com H6 e H7.
+5. **Interpretação:** veja a seção "Indícios" do resumo e compare com H6 e H7. Se os campos aparecem como texto (`^FD`) com os valores fictícios, a captura pode servir de modelo para uma solução própria: basta trocar esses valores pelos reais. Se a etiqueta veio como imagem (`^GF`), esse atalho não funciona.
 6. **Riscos e precauções:** **mesmo sem papel, para o programa é uma impressão.** Contadores e números de série podem avançar, e o sistema pode registrar a etiqueta como impressa. Se você trocar a impressora no modelo e salvar, altera o modelo de produção. Confirme esses pontos antes, não salve o modelo e não tire o `.prn` do computador da empresa.
 
 ## X5. Capturar com a impressora virtual
